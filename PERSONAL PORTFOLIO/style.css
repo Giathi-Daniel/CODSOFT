@@ -30,9 +30,10 @@ html {
 
 body {
     font-family: "Roboto", sans-serif;
-    color: #ccc;
+    color: #fff;
     line-height: 1.7;
     background: var(--color-bg);
+    overflow-x: hidden;
 }
 
 .container {
@@ -64,9 +65,9 @@ img {
     object-fit: cover;
 }
 
-/* section {
-    padding
-} */
+section {
+    padding: 4rem 6rem;
+}
 
 
 /* ******************************* HOME SECTION ******************************* */
@@ -101,7 +102,45 @@ nav {
 }
 
 /* *****************HERO ***************** */
+.hero__container {
+    background: var(--color-secondary);
+    inline-size: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding-inline-start: 10rem;
+}
 
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.7;
+    margin-inline-start: -10rem;
+}
+
+.hero__text p {
+    margin-block-start: 3rem;
+    color: var(--color-black);
+    font-size: 1.3rem;
+}
+
+.image__container {
+    background: var(--color-bg);
+    border-radius: 50%;
+    inline-size: 100%;
+    block-size: 65vh;
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 1rem;
+    display: inline-block;
+    overflow: hidden;
+}
 
 /* ******************************* ABOUT SECTION ******************************* */
 /* ******************************* SKILLS SECTION ******************************* */
@@ -121,16 +160,70 @@ footer {
 
 
 /* ******************************* MEDIA QUERIES ******************************* */
-/* ***************** TABLETS (1240PX) ***************** */
+/* ***************** MEDIUM DEVICES ***************** */
 @media screen and (max-width: 1240px) {
     .container {
-        inline-size: var(--container-width-md);
+        /* background: red; */
+    }
+
+    .hero__container {
+        inline-size: 100%;
+    }
+
+    .hero__text h1 {
+        margin-inline-start: -4rem;
     }
 }
 
-/* ***************** PHONES (6000PX) ***************** */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1170px) {
+    section {
+        padding: 2.5rem 3rem;
+    }
+
+    .hero__container {
+        padding-inline-start: 4rem;
+    }
+
+    .hero__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__text h1 {
+        margin-inline-start: 0;
+    }
+
+    .image__container {
+        block-size: 55vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
     .container {
-        inline-size: var(--container-width-sm);
+        inline-size: 100%;
+    }
+
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ***************** SMALLER DEVICES ***************** */
+@media screen and (max-width: 764px) {
+    .image__container {
+        block-size: 50vh;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__menu {
+        display: block;
+    }
+
+    .image__container {
+        block-size: 55vh;
     }
 }
