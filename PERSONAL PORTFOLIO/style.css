@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ******************************* GENERAL STYLING ******************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --color-primary: #041e42;
+    --color-secondary: #cb6228;
+    --color-tertialry: #cb7c28;
+
+    --transition: all 300ms ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #ccc;
+    line-height: 1.7;
+    background: rgba(201, 180, 180, 0.667);
+}
+
+.container {
+    inline-size: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    line-height: 1.4;
+}
+
+a {
+    color: aliceblue;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: beige;
+}
+
+img {
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+
+/* ******************************* HOME SECTION ******************************* */
+
+
+/* ******************************* ABOUT SECTION ******************************* */
+/* ******************************* SKILLS SECTION ******************************* */
+/* ******************************* PROJECTS SECTION ******************************* */
+/* ******************************* CONTACT SECTION ******************************* */
+/* ******************************* FOOTER SECTION ******************************* */
+
+
+
+
+/* ******************************* MEDIA QUERIES ******************************* */
+/* ***************** TABLETS (1240PX) ***************** */
+@media screen and (max-width: 1240px) {
+    .container {
+        inline-size: var(--container-width-md);
+    }
+}
+
+/* ***************** PHONES (6000PX) ***************** */
+@media screen and (max-width: 600px) {
+    .container {
+        inline-size: var(--container-width-sm);
+    }
+}
