@@ -71,15 +71,25 @@ section {
     padding: 10rem 6rem;
 }
 
-/* .heading {
+.heading__container {
     display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
     justify-content: center;
-    font-size: 3rem;
+    align-items: center;
+    margin-block-end: 6rem;
+}
+
+.heading__container h1 {
+    font-size: 2.2rem;
     color: var(--color-bg);
-    background: var(--color-primary);
-    padding-block: 1.5rem;
-    inline-size: 100vw;
-} */
+}
+
+.heading__container span {
+    inline-size: 5%;
+    block-size: 1.2rem;
+    background: var(--color-secondary);
+}
 
 
 /* ******************************* HOME SECTION ******************************* */
@@ -202,6 +212,7 @@ p>a:hover {
     color: var(--color-tertiary);
     transform: scale(1.1);
 }
+
 .contact_detail {
     display: flex;
     flex-direction: column;
@@ -210,17 +221,21 @@ p>a:hover {
     border-right: 1px solid var(--color-secondary);
     gap: .5rem;
 }
+
 .contact_detail i {
     font-size: 5rem;
-    background:transparent;
+    background: transparent;
     color: var(--color-secondary);
 }
+
 .contact_detail h3 {
     margin-block-start: 1.2rem;
     font-size: 1.9rem;
     color: var(--color-bg);
 }
-.contact_detail p, p > a {
+
+.contact_detail p,
+p>a {
     font-size: 1.6rem;
     font-weight: bold;
 }
