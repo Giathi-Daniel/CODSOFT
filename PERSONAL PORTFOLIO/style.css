@@ -73,11 +73,11 @@ section {
 /* ******************************* HOME SECTION ******************************* */
 /* ***************** NAVIGATION ***************** */
 nav {
-    block-size: 6rem;
+    block-size: 9rem;
     inline-size: 100vw;
     background: var(--color-primary);
     color: #fff;
-    padding: 1rem;
+    padding: 1.6rem;
     display: grid;
     place-items: center;
     inset-block-start: 0;
@@ -92,9 +92,17 @@ nav {
     align-items: center;
 }
 
+.logo {
+    font-size: 2rem;
+}
+
 .nav__list {
     display: flex;
     gap: 2rem;
+}
+
+.nav__list li a {
+    font-size: 1.5rem;
 }
 
 .nav__menu {
@@ -109,33 +117,32 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     padding-inline-start: 10rem;
+    block-size: 87vh;
+    padding-block-start: 10rem;
 }
 
 .hero__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
 }
 
 .hero__text h1 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.7;
-    margin-inline-start: -10rem;
+    margin-block-start: 5rem;
 }
 
 .hero__text p {
-    margin-block-start: 3rem;
+    margin-block-start: 5rem;
     color: var(--color-black);
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 .image__container {
     background: var(--color-bg);
     border-radius: 50%;
-    inline-size: 100%;
-    block-size: 65vh;
+    inline-size: 70%;
+    block-size: 60vh;
     border-end-start-radius: 2rem;
     border-end-end-radius: 1rem;
     display: inline-block;
@@ -161,11 +168,7 @@ footer {
 
 /* ******************************* MEDIA QUERIES ******************************* */
 /* ***************** MEDIUM DEVICES ***************** */
-@media screen and (max-width: 1240px) {
-    .container {
-        /* background: red; */
-    }
-
+/* @media screen and (max-width: 1240px) {
     .hero__container {
         inline-size: 100%;
     }
@@ -210,7 +213,7 @@ footer {
 }
 
 /* ***************** SMALLER DEVICES ***************** */
-@media screen and (max-width: 764px) {
+/* @media screen and (max-width: 764px) {
     .image__container {
         block-size: 50vh;
     }
@@ -226,4 +229,4 @@ footer {
     .image__container {
         block-size: 55vh;
     }
-}
+}  */
