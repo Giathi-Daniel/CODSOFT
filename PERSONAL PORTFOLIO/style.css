@@ -83,6 +83,7 @@ section {
 .heading__container h1 {
     font-size: 2.2rem;
     color: var(--color-bg);
+    text-transform: uppercase;
 }
 
 .heading__container span {
@@ -190,7 +191,78 @@ nav {
 
 
 /* ******************************* SKILLS SECTION ******************************* */
+#skills {
+    background: var(--color-secondary);
+}
+
+#skills span.skills {
+    background: var(--color-primary);
+}
+
 /* ******************************* PROJECTS SECTION ******************************* */
+#projects {
+    background: var(--color-bg);
+}
+
+#projects .heading__container h1 {
+    color: var(--color-primary);
+}
+
+/* ******************************* RESUME SECTION ******************************* */
+#resume {
+    background: var(--color-secondary);
+}
+
+#resume .heading__container h1 {
+    color: var(--color-primary);
+}
+
+#resume span.skills {
+    background: var(--color-bg);
+}
+
+.resume_image {
+    inline-size: 30rem;
+}
+
+.resume__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.resume_download p {
+    color: var(--color-black);
+}
+
+.resume_download i {
+    transform: rotate(90deg);
+    color: var(--color-bg);
+    margin-inline-start: 1rem;
+}
+
+button {
+    inline-size: 10%;
+    margin-inline-end: -20rem;
+    outline: none;
+    border: 1px solid var(--color-secondary);
+    padding: 2rem 3rem;
+    color: var(--color-bg);
+    background: var(--color-primary);
+    border-radius: .4rem;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
 /* ******************************* CONTACT SECTION ******************************* */
 #contact {
     background: var(--color-primary);
@@ -218,7 +290,7 @@ p>a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid var(--color-secondary);
+    border-inline-end: 1px solid var(--color-secondary);
     gap: .5rem;
 }
 
@@ -238,6 +310,10 @@ p>a:hover {
 p>a {
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+.contact_detail:nth-child(3) {
+    margin-inline-end: -5rem;
 }
 
 /* ******************************* FOOTER SECTION ******************************* */
