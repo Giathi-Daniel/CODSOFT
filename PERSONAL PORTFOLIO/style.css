@@ -185,8 +185,44 @@ nav {
     inline-size: 100vw;
 }
 
+.about__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.about__desc h2 {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
 .about__desc p {
     color: var(--color-black);
+    margin-block: 1rem;
+}
+
+.about__rate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--color-bg);
+    border-radius: .7rem;
+    padding: 2rem;
+}
+
+.about__rate-desc {
+    margin-block-end: .5rem;
+}
+
+.about__rate-desc > h1 {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.about_stars {
+    font-size: 1.2rem;
+    color: var(--color-tertiary);
 }
 
 
@@ -233,7 +269,6 @@ nav {
 .resume_download p {
     color: var(--color-black);
     display: inline-block;
-    /* margin-inline-start: -15rem; */
 }
 
 .resume_download i {
