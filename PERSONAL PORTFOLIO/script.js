@@ -27,3 +27,12 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
     xhr.send();
 });
+
+
+// SLIDES
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
+  });

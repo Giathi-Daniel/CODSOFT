@@ -214,7 +214,7 @@ nav {
     margin-block-end: .5rem;
 }
 
-.about__rate-desc > h1 {
+.about__rate-desc>h1 {
     color: var(--color-primary);
     font-weight: bold;
     font-size: 1.4rem;
