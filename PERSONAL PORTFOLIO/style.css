@@ -324,20 +324,17 @@ p>a {
 
 .contact__details {
     margin-block-start: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    place-items: center;
 }
 
-.contact__details>p,
-.contact__location p {
+.contact__details>p {
     font-weight: bold;
     font-size: 2.4rem;
     color: var(--color-bg);
 }
 
-.contact__details h3,
-.contact__location h3 {
+.contact__details h3 {
     color: var(--color-bg);
     font-size: 1.5rem;
 }
