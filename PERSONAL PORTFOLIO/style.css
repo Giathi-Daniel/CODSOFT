@@ -222,18 +222,18 @@ nav {
 }
 
 .resume_image {
-    inline-size: 30rem;
+    inline-size: 50rem;
 }
 
 .resume__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    display: grid;
+    place-items: center;
 }
 
 .resume_download p {
     color: var(--color-black);
+    display: inline-block;
+    /* margin-inline-start: -15rem; */
 }
 
 .resume_download i {
@@ -243,11 +243,12 @@ nav {
 }
 
 button {
-    inline-size: 10%;
-    margin-inline-end: -20rem;
+    inline-size: 50%;
+    /* margin-inline-end: -25rem; */
+    margin-inline-start: -5rem;
     outline: none;
     border: 1px solid var(--color-secondary);
-    padding: 2rem 3rem;
+    padding: 1.5rem 3rem;
     color: var(--color-bg);
     background: var(--color-primary);
     border-radius: .4rem;
@@ -261,6 +262,11 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+.download {
+    display: flex;
+    gap: 3rem;
 }
 
 /* ******************************* CONTACT SECTION ******************************* */
@@ -314,6 +320,30 @@ p>a {
 
 .contact_detail:nth-child(3) {
     margin-inline-end: -5rem;
+}
+
+.contact__details {
+    margin-block-start: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__details>p,
+.contact__location p {
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: var(--color-bg);
+}
+
+.contact__details h3,
+.contact__location h3 {
+    color: var(--color-bg);
+    font-size: 1.5rem;
+}
+
+.contact__details p {
+    color: var(--color-bg);
 }
 
 /* ******************************* FOOTER SECTION ******************************* */
