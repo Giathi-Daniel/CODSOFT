@@ -35,7 +35,6 @@ body {
     line-height: 1.7;
     background: var(--color-bg);
     overflow-x: hidden;
-    font-size: 2rem;
 }
 
 .container {
@@ -199,6 +198,7 @@ nav {
 .about__desc p {
     color: var(--color-black);
     margin-block: 1rem;
+    max-inline-size: 100%;
 }
 
 .about__rate {
@@ -237,6 +237,7 @@ nav {
 /* ******************************* PROJECTS SECTION ******************************* */
 #projects {
     background: var(--color-bg);
+    overflow: hidden;
 }
 
 section#projects {
@@ -259,13 +260,15 @@ section#projects {
 }
 
 .projects__container {
-    inline-size: 100%;
+    /* inline-size: 100%; */
+    overflow-x: hidden;
 }
 
 .project {
     min-block-size: 100vh;
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 .project::before {
@@ -356,6 +359,10 @@ section#projects {
     position: relative;
 }
 
+.swiper-slide {
+    inline-size: auto;
+}
+
 .swiper-pagination {
     font-size: 3rem;
     color: var(--color-secondary);
@@ -368,6 +375,10 @@ section#projects {
     background: var(--color-secondary);
 }
 
+section#resume {
+    padding-block: 4rem;
+}
+
 #resume .heading__container h1 {
     color: var(--color-primary);
 }
@@ -376,18 +387,30 @@ section#projects {
     background: var(--color-bg);
 }
 
-.resume_image {
-    inline-size: 50rem;
-}
-
 .resume__container {
     display: grid;
     place-items: center;
+    grid-template-columns: 18vw auto 20vw;
+}
+
+.resume_download {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resume_download h1 {
+    font-size: 2rem;
+}
+
+.resume_download h1,
+.resume_download p {
+    color: var(--color-bg);
 }
 
 .resume_download p {
-    color: var(--color-black);
     display: inline-block;
+    font-size: 1.8rem;
 }
 
 .resume_download i {
@@ -398,7 +421,6 @@ section#projects {
 
 button {
     inline-size: 50%;
-    /* margin-inline-end: -25rem; */
     margin-inline-start: -5rem;
     outline: none;
     border: 1px solid var(--color-secondary);
@@ -512,54 +534,24 @@ footer {
 
 /* ******************************* MEDIA QUERIES ******************************* */
 /* ***************** MEDIUM DEVICES ***************** */
-/* @media screen and (max-inline-size: 1240px) {
-    .hero__container {
-        inline-size: 100%;
-    }
-
-    .hero__text h1 {
-        margin-inline-start: -4rem;
-    }
-}
-
-@media screen and (max-inline-size: 1170px) {
-    section {
-        padding: 2.5rem 3rem;
-    }
-
-    .hero__container {
-        padding-inline-start: 4rem;
-    }
-
-    .hero__text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero__text h1 {
-        margin-inline-start: 0;
-    }
-
-    .image__container {
-        block-size: 55vh;
-    }
-}
-
-@media screen and (max-inline-size: 1000px) {
+@media screen and (max-width: 1024px) {
     .container {
+        inline-size: var(--container-width-md);
+    }
+
+    .nav__container {
         inline-size: 100%;
     }
 
-    .hero__container {
-        grid-template-columns: 1fr;
+    .swiper-slide {
+        inline-size: 100%;
     }
 }
 
-/* ***************** SMALLER DEVICES ***************** */
-/* @media screen and (max-inline-size: 764px) {
-    .image__container {
-        block-size: 50vh;
+/* ***************** SMALL DEVICES ***************** */
+@media screen and (max-width: 700px) {
+    .container {
+        inline-size: var(--container-width-sm);
     }
 
     .nav__list {
@@ -567,10 +559,66 @@ footer {
     }
 
     .nav__menu {
-        display: block;
+        display: inline-block;
+        font-size: 1.5rem;
     }
 
-    .image__container {
-        block-size: 55vh;
+    .nav__menu .fa-xmark {
+        display: none;
     }
-}  */
+
+    .hero__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        inline-size: 100%;
+    }
+
+    .swiper-slide {
+        inline-size: 100%;
+    }
+
+    .resume_image {
+        inline-size: 100%;
+    }
+
+    .resume__container {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        inline-size: 100%;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr;
+        border-block-start: 1px solid #555;
+        border-block-end: 1px solid #555;
+        inline-size: 100vw;
+        padding-block: 1rem;
+    }
+
+    .contact_detail {
+        border: none;
+        align-items: start;
+    }
+
+    .contact_detail h3,
+    .contact__details {
+        margin-inline-start: 0;
+    }
+
+    .contact_detail h3 {
+        font-size: 1rem;
+    }
+
+    .contact_detail i {
+        font-size: 3rem;
+    }
+
+    .contact__details>p {
+        font-size: 1.3rem;
+    }
+}
