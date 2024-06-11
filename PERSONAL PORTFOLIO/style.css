@@ -111,7 +111,6 @@ nav {
 .nav__container {
     display: flex;
     justify-content: space-between;
-    inline-size: 90%;
     align-items: center;
 }
 
@@ -240,8 +239,94 @@ nav {
     background: var(--color-bg);
 }
 
+section#projects {
+    padding-inline: 0;
+}
+
 #projects .heading__container h1 {
     color: var(--color-primary);
+}
+
+.projects__container {
+    inline-size: 100%;
+}
+
+.project {
+    min-block-size: 100vh;
+    padding-block-start: 5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.project::before {
+    content: "";
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: 2;
+}
+
+.project>div {
+    padding-block: 20rem;
+    position: relative;
+    z-index: 3;
+}
+
+.project:nth-child(1) {
+    background: url('./images/resume.jpg') no-repeat center center/cover;
+}
+
+.project_title,
+.project_name,
+.project__desc {
+    color: var(--color-bg);
+    margin-inline-start: 11.5rem;
+}
+
+.project_title {
+    font-size: 2.1rem;
+    background: var(--color-primary);
+    padding: 0.85rem 1rem;
+    inline-size: fit-content;
+}
+
+.project_name {
+    font-size: 5.143rem;
+
+}
+
+.project__desc {
+    font-size: 2rem;
+    margin-block-start: .5rem;
+}
+
+.project a>i {
+    background: var(--color-secondary);
+    font-size: 2rem;
+    padding: .87rem;
+    border-radius: 50%;
+    margin-inline-start: 12rem;
+    margin-block-start: 3rem;
+}
+
+.project a>i:hover {
+    color: var(--color-bg);
+    transform: scale(1.1);
+}
+
+.mySwiper {
+    position: relative;
+}
+
+.swiper-pagination {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    position: absolute;
+    inset-block-end: 0;
 }
 
 /* ******************************* RESUME SECTION ******************************* */

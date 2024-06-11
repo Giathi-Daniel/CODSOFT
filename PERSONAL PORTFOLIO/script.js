@@ -31,8 +31,13 @@ document.getElementById('downloadButton').addEventListener('click', function() {
 
 // SLIDES
 var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-  });
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  }
+});
