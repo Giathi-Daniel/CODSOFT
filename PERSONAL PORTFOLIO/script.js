@@ -3,6 +3,7 @@ const navigation = document.querySelector('nav');
 window.addEventListener("scroll", () => {
   if(this.scrollY > 100) {
     navigation.classList.add('active');
+    console.log('scrolled')
   } else {
     navigation.classList.remove('active')
   }

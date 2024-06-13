@@ -124,7 +124,6 @@ nav {
 }
 
 nav.active {
-    padding: 1rem;
     animation: slide .4s forwards;
 }
 
