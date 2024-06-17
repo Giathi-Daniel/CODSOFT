@@ -472,7 +472,7 @@ nav.active {
     inline-size: fit-content;
     transition: var(--transition);
     border-radius: .6rem;
-    margin-inline-start: -3rem;
+    margin-inline-start: -4rem;
 }
 
 .project__item a:hover {
