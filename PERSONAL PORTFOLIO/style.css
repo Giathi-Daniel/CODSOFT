@@ -439,7 +439,7 @@ nav.active {
 
 .projects__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: .7rem;
 }
 
@@ -468,7 +468,7 @@ nav.active {
 .project__item a {
     align-items: left !important;
     background: var(--color-secondary);
-    padding: .8rem 1rem;
+    padding: .1rem 1rem;
     inline-size: fit-content;
     transition: var(--transition);
     border-radius: .6rem;
