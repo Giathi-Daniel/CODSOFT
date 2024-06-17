@@ -164,13 +164,17 @@ nav.active {
     font-size: 2rem;
 }
 
+.logo>span {
+    font-size: 2rem;
+}
+
 .nav__list {
     display: flex;
     gap: 2rem;
 }
 
 .nav__list li a {
-    font-size: 1.2rem;
+    font-size: .875rem;
 }
 
 .list__item {
@@ -203,7 +207,7 @@ nav.active {
     font-weight: 700;
     line-height: 1.7;
     color: var(--color-black);
-    margin-block-start: -9rem;
+    margin-block-start: 11rem;
 }
 
 .hero__text span {
@@ -220,7 +224,7 @@ nav.active {
 .image__container {
     background: var(--color-tertiary);
     aspect-ratio: 1/1;
-    inline-size: 30rem;
+    inline-size: 25rem;
     padding: 3rem;
     overflow: hidden;
     margin-block-start: -14rem;
@@ -239,7 +243,7 @@ nav.active {
 }
 
 .download_btn {
-    margin-block-start: -10rem;
+    margin-block-start: 12rem;
     background: var(--color-primary);
     font-size: 1.3rem;
     padding: 1.2rem;
