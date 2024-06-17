@@ -471,7 +471,7 @@ nav.active {
     padding: .8rem;
     transition: var(--transition);
     border-radius: .6rem;
-    margin-inline-start: 19rem;
+    margin-inline-start: -23rem;
 }
 
 .project__item a:hover {
