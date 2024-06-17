@@ -161,7 +161,7 @@ nav.active {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .nav__list {
@@ -170,7 +170,7 @@ nav.active {
 }
 
 .nav__list li a {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .list__item {
