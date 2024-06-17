@@ -255,11 +255,6 @@ nav.active {
 }
 
 /* ******************************* ABOUT ******************************* */
-#about {
-    /* background: var(--color-tertiary); */
-    inline-size: 100vw;
-}
-
 #about .heading__container>span {
     background: var(--color-primary);
 }
@@ -280,14 +275,17 @@ nav.active {
     color: var(--color-black);
     margin-block: 1rem;
     max-inline-size: 100%;
+    text-align: start;
 }
 
 .about__rate {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background: var(--color-bg);
+    gap: .5rem;
     border-radius: .7rem;
-    padding: 2rem;
+    padding: 2rem 0;
+    margin-block-start: 2rem;
 }
 
 .about__rate-desc {
@@ -317,6 +315,106 @@ nav.active {
 
 #skills .heading__container .skills {
     background: var(--color-primary);
+}
+
+.skill_item a {
+    color: var(--color-black);
+}
+
+.skills__container ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-block-end: 1px solid var(--color-secondary);
+    padding-block-end: 3rem;
+}
+
+.skill_item {
+    display: flex;
+    gap: 2rem;
+    border: 2px solid var(--color-tertiary);
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: var(--transition);
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+}
+
+.skill_item h3 {
+    font-size: 2rem;
+}
+
+.skill_item p {
+    text-align: start;
+}
+
+.skill_item:hover,
+.skill_item.active {
+    color: var(--color-bg);
+    background: var(--color-primary);
+    border: none;
+}
+
+.skill_item span {
+    background: var(--color-primary);
+    margin-block: .3rem;
+    block-size: 50%;
+    border-radius: 50%;
+    color: var(--color-bg);
+    display: grid;
+    place-items: center;
+    padding-inline: .7rem;
+}
+
+.skills__desc {
+    text-align: start;
+    margin-block-start: 3rem;
+}
+
+.skills__desc p {
+    margin-block-start: 1rem;
+    color: var(--color-black);
+    inline-size: 85%;
+    display: inline-block;
+}
+
+.skill_desc.active {
+    border: 1px solid var(--color-primary);
+    border-radius: .45rem;
+    padding-inline: 1rem;
+    padding-block-end: 4rem;
+}
+
+.skills__desc article h1 {
+    margin-block-start: 4rem;
+    font-size: 2rem;
+}
+
+.skills__list {
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    inset-block-start: 4rem;
+    background: var(--color-secondary);
+    block-size: .1rem;
+    inline-size: 17%;
+    z-index: -1;
+    inset-inline-start: 26rem;
+}
+
+.underline:nth-child(2) {
+    position: absolute;
+    inset-block-start: 4rem;
+    background: var(--color-secondary) !important;
+    block-size: .1rem;
+    inline-size: 16.5%;
+    color: var(--color-secondary) !important;
+    z-index: -1;
+    inset-inline-start: 73.5rem;
 }
 
 /* ******************************* PROJECTS SECTION ******************************* */
