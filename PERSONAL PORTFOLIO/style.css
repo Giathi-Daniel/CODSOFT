@@ -468,11 +468,11 @@ nav.active {
 .project__item a {
     align-items: left !important;
     background: var(--color-secondary);
-    padding: .2rem 1rem;
+    padding: .3rem 1rem;
     inline-size: fit-content;
     transition: var(--transition);
     border-radius: .6rem;
-    margin-inline-start: -1rem;
+    margin-inline-start: -3rem;
 }
 
 .project__item a:hover {
