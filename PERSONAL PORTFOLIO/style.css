@@ -112,7 +112,7 @@ section:nth-child(odd):not(footer) {
 }
 
 .heading__container h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: var(--color-bg);
     text-transform: uppercase;
 }
@@ -161,11 +161,11 @@ nav.active {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .logo>span {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 
 .nav__list {
@@ -303,11 +303,11 @@ nav.active {
 .about__rate-desc>h1 {
     color: var(--color-primary);
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: .875rem;
 }
 
 .about_stars {
-    font-size: 1.2rem;
+    font-size: .75rem;
     color: var(--color-tertiary);
 }
 
@@ -341,7 +341,7 @@ nav.active {
     display: flex;
     gap: 2rem;
     border: 2px solid var(--color-tertiary);
-    padding: 1rem;
+    padding: .75rem;
     border-radius: .5rem;
     transition: var(--transition);
     cursor: pointer;
@@ -350,7 +350,7 @@ nav.active {
 }
 
 .skill_item h3 {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .skill_item p {
@@ -396,7 +396,7 @@ nav.active {
 
 .skills__desc article h1 {
     margin-block-start: 4rem;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .skills__list {
@@ -462,7 +462,6 @@ nav.active {
 }
 
 .project__item p {
-    font-size: 1.4rem;
     color: var(--color-bg);
 }
 
@@ -515,7 +514,7 @@ section#resume {
 }
 
 .resume_download h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .resume_download h1,
@@ -525,7 +524,6 @@ section#resume {
 
 .resume_download p {
     display: inline-block;
-    font-size: 1.8rem;
 }
 
 .resume_download i {
@@ -543,7 +541,6 @@ button {
     color: var(--color-bg);
     background: var(--color-primary);
     border-radius: .4rem;
-    font-size: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -592,20 +589,20 @@ p>a:hover {
 }
 
 .contact_detail i {
-    font-size: 5rem;
+    font-size: 2.5rem;
     background: transparent;
     color: var(--color-secondary);
 }
 
 .contact_detail h3 {
     margin-block-start: 1.2rem;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     color: var(--color-bg);
 }
 
 .contact_detail p,
 p>a {
-    font-size: 1.6rem;
+    font-size: .9rem;
     font-weight: bold;
 }
 
