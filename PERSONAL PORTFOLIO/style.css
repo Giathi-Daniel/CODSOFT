@@ -440,7 +440,7 @@ nav.active {
 .projects__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-    gap: 2rem;
+    gap: .7rem;
 }
 
 .project__item {
@@ -468,11 +468,11 @@ nav.active {
 .project__item a {
     align-items: left !important;
     background: var(--color-secondary);
-    /* padding: .8rem; */
+    padding: .8rem 1rem;
     inline-size: fit-content;
     transition: var(--transition);
     border-radius: .6rem;
-    /* margin-inline-start: -23rem; */
+    margin-inline-start: -25rem;
 }
 
 .project__item a:hover {
