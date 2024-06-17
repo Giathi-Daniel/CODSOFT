@@ -39,16 +39,21 @@ body {
 
 .container {
     inline-size: var(--container-width-lg);
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 h1,
 h2 {
-    line-height: 1.4;
+    line-height: 1;
 }
 
 h1 span {
     color: var(--color-tertiary);
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 a {
@@ -74,16 +79,27 @@ a:hover {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 img {
+    display: block;
     inline-size: 100%;
     object-fit: cover;
 }
 
 section {
-    padding: 10rem 6rem;
+    padding: 9rem 0;
+}
+
+section>div {
+    inline-size: 50%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+section:nth-child(odd):not(footer) {
+    background: var(--color-secondary);
 }
 
 .heading__container {
@@ -170,7 +186,6 @@ nav.active {
 
 /* *****************HERO ***************** */
 #home {
-    background: var(--color-secondary);
     inline-size: 100vw;
 }
 
@@ -209,8 +224,12 @@ nav.active {
 
 /* ******************************* ABOUT ******************************* */
 #about {
-    background: var(--color-tertiary);
+    /* background: var(--color-tertiary); */
     inline-size: 100vw;
+}
+
+#about .heading__container>span {
+    background: var(--color-primary);
 }
 
 .about__container {
@@ -256,155 +275,33 @@ nav.active {
 
 
 /* ******************************* SKILLS SECTION ******************************* */
-#skills {
-    background: var(--color-secondary);
-}
-
 #skills span.skills {
     background: var(--color-primary);
 }
 
-/* ******************************* PROJECTS SECTION ******************************* */
-#projects {
-    background: var(--color-bg);
-    overflow: hidden;
+#skills .heading__container h1 {
+    color: var(--color-secondary);
 }
 
-section#projects {
-    padding-inline: 0;
-    padding-block: 0;
-}
-
-#projects .heading__container {
+#skills .heading__container .skills {
     background: var(--color-primary);
-    padding-block: 2rem;
-    margin-block-end: 0;
+}
+
+/* ******************************* PROJECTS SECTION ******************************* */
+#projects .heading__container {
+    padding: 2rem;
 }
 
 #projects .heading__container h1 {
-    color: var(--color-secondary);
+    color: var(--color-bg);
 }
 
 #projects .heading__container .projects {
-    background: var(--color-bg);
-}
-
-.projects__container {
-    /* inline-size: 100%; */
-    overflow-x: hidden;
-}
-
-.project {
-    min-block-size: 100vh;
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
-}
-
-.project::before {
-    content: "";
-    display: block;
-    inline-size: 100%;
-    block-size: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    z-index: 2;
-}
-
-.project>div {
-    padding-block: 20rem;
-    position: relative;
-    z-index: 3;
-}
-
-.project:nth-child(1) {
-    background: url('./images/portfolio-5.png') no-repeat center center/cover;
-}
-
-.project:nth-child(2) {
-    background: url('./images/foodwebsite.png') no-repeat center center/cover;
-}
-
-.project:nth-child(3) {
-    background: url('./images/portfolio-7.png') no-repeat center center/cover;
-}
-
-.project:nth-child(4) {
-    background: url('./images/portfolio-4.png') no-repeat center center/cover;
-}
-
-.project:nth-child(5) {
-    background: url('./images/admin-dashboard.png') no-repeat center center/cover;
-}
-
-.project:nth-child(6) {
-    background: url('./images/portfolio-1.png') no-repeat center center/cover;
-}
-
-.project_title,
-.project_name,
-.project__desc {
-    color: var(--color-bg);
-    margin-inline-start: 11.5rem;
-}
-
-.project_title {
-    font-size: 1.5rem;
     background: var(--color-primary);
-    padding: 0.85rem 1rem;
-    inline-size: fit-content;
 }
 
-.project_name {
-    font-size: 5.143rem;
-}
-
-.project_name span,
-.edu {
-    color: #f3a406;
-}
-
-.project__desc {
-    font-size: 1.4rem;
-    margin-block-start: .5rem;
-}
-
-.project a>i {
-    background: var(--color-secondary);
-    font-size: 2rem;
-    padding: .87rem;
-    border-radius: 50%;
-    margin-inline-start: 12rem;
-    margin-block-start: 3rem;
-}
-
-.project a>i:hover {
-    color: var(--color-bg);
-    transform: scale(1.1);
-}
-
-.mySwiper {
-    position: relative;
-}
-
-.swiper-slide {
-    inline-size: auto;
-}
-
-.swiper-pagination {
-    font-size: 3rem;
-    color: var(--color-secondary);
-    position: absolute;
-    background: transparent;
-}
 
 /* ******************************* RESUME SECTION ******************************* */
-#resume {
-    background: var(--color-secondary);
-}
-
 section#resume {
     padding-block: 4rem;
 }
@@ -413,8 +310,8 @@ section#resume {
     color: var(--color-primary);
 }
 
-#resume span.skills {
-    background: var(--color-bg);
+#resume span {
+    background: var(--color-secondary);
 }
 
 .resume__container {
@@ -435,7 +332,7 @@ section#resume {
 
 .resume_download h1,
 .resume_download p {
-    color: var(--color-bg);
+    color: var(--color-primary);
 }
 
 .resume_download p {
@@ -445,7 +342,7 @@ section#resume {
 
 .resume_download i {
     transform: rotate(90deg);
-    color: var(--color-bg);
+    color: var(--color-secondary);
     margin-inline-start: 1rem;
 }
 
@@ -453,7 +350,7 @@ button {
     inline-size: 50%;
     margin-inline-start: -5rem;
     outline: none;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--color-bg);
     padding: 1.5rem 3rem;
     color: var(--color-bg);
     background: var(--color-primary);
@@ -553,10 +450,16 @@ p>a {
 footer {
     inline-size: 100vw;
     background: var(--color-black);
-    padding-block: 1rem;
+    padding-block-start: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer a {
+    margin-block-start: -10rem;
+    padding-block-start: 0;
+    font-size: 1.3rem;
 }
 
 
@@ -579,10 +482,6 @@ footer {
 
     .nav__list li a {
         font-size: .975rem;
-    }
-
-    .swiper-slide {
-        inline-size: 100%;
     }
 }
 
