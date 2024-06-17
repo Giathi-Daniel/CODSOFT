@@ -920,7 +920,7 @@ footer a {
 
     /* PROJECTS */
     .project__item a {
-        margin-inline-start: -6rem;
+        margin-inline-start: -14rem;
     }
 
     .projects__container {
