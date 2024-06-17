@@ -1,13 +1,13 @@
 // window onscroll
-const navigation = document.querySelector('nav');
-window.addEventListener("scroll", () => {
-  if(this.scrollY > 100) {
-    navigation.classList.add('active');
-    console.log('scrolled')
-  } else {
-    navigation.classList.remove('active')
-  }
-})
+// const navigation = document.querySelector('nav');
+// window.addEventListener("scroll", () => {
+//   if(this.scrollY > 100) {
+//     navigation.classList.add('active');
+//     console.log('scrolled')
+//   } else {
+//     navigation.classList.remove('active')
+//   }
+// })
 
 
 // NAVIGATION BAR
@@ -23,21 +23,6 @@ function toggleMenu() {
 
 menuBtn.addEventListener('click', toggleMenu);
 menuClose.addEventListener('click', toggleMenu);
-
-
-
-// swiperJS
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  }
-});
 
 
 // download button

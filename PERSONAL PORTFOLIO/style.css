@@ -430,6 +430,57 @@ nav.active {
     background: var(--color-primary);
 }
 
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
+    gap: 2rem;
+}
+
+.project__item {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .65rem;
+    text-align: start;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.project__item:hover {
+    box-shadow: 0 3rem 2rem rgba(26, 25, 25, 0.1);
+}
+
+.project__item p {
+    font-size: 1.4rem;
+    color: var(--color-bg);
+}
+
+.project__item a {
+    align-items: left !important;
+    background: var(--color-secondary);
+    padding: .8rem 1rem;
+    transition: var(--transition);
+    border-radius: .6rem;
+    margin-inline-start: -19rem;
+}
+
+.project__item a:hover {
+    font-weight: bold;
+    color: var(--color-bg);
+}
+
+.project_image img {
+    block-size: auto;
+    max-block-size: 13rem;
+    border-radius: .7rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 
 /* ******************************* RESUME SECTION ******************************* */
 section#resume {
