@@ -687,10 +687,6 @@ footer a {
         block-size: auto;
     }
 
-    .hero__text {
-        margin-block-start: 10rem;
-    }
-
     .download_btn {
         margin-block-start: 0;
     }
@@ -720,7 +716,7 @@ footer a {
 
     /* projects */
     .project__item a {
-        margin-inline-start: -15rem;
+        margin-inline-start: -10rem;
     }
 
     /* resume */
@@ -913,7 +909,7 @@ footer a {
     }
 
     .about__rate {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     /* SKILLS */
@@ -924,7 +920,7 @@ footer a {
 
     /* PROJECTS */
     .project__item a {
-        margin-inline-start: -10rem;
+        margin-inline-start: -6rem;
     }
 
     .projects__container {
