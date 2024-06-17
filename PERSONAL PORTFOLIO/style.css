@@ -127,8 +127,8 @@ section:nth-child(odd):not(footer) {
 /* ******************************* HOME SECTION ******************************* */
 /* ***************** NAVIGATION ***************** */
 nav {
-    block-size: 9rem;
-    inline-size: 100vw;
+    block-size: 6rem;
+    inline-size: 100%;
     background: var(--color-primary);
     color: #fff;
     padding: 1.6rem;
