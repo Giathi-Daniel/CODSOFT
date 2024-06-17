@@ -468,10 +468,10 @@ nav.active {
 .project__item a {
     align-items: left !important;
     background: var(--color-secondary);
-    padding: .8rem 1rem;
+    padding: .8rem;
     transition: var(--transition);
     border-radius: .6rem;
-    margin-inline-start: -19rem;
+    margin-inline-start: 19rem;
 }
 
 .project__item a:hover {
