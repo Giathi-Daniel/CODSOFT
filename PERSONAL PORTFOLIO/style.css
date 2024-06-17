@@ -196,7 +196,7 @@ nav.active {
 .hero__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 3rem;
     padding-block-start: 10rem;
@@ -207,7 +207,7 @@ nav.active {
     font-weight: 700;
     line-height: 1.7;
     color: var(--color-black);
-    margin-block-start: .8rem;
+    margin-block-start: -2rem;
 }
 
 .hero__text span {
