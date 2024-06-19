@@ -351,6 +351,7 @@ nav.active {
 
 .skill_item h3 {
     font-size: 1rem;
+    color: var(--color-primary);
 }
 
 .skill_item p {
@@ -367,7 +368,7 @@ nav.active {
 .skill_item span {
     background: var(--color-primary);
     margin-block: .3rem;
-    block-size: 50%;
+    block-size: auto;
     border-radius: 50%;
     color: var(--color-bg);
     display: grid;
