@@ -456,7 +456,7 @@ nav.active {
     text-align: start;
     transition: var(--transition);
     cursor: pointer;
-    inline-size: 97%;
+    inline-size: 98%;
 }
 
 .project__item:hover {
