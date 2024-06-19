@@ -400,10 +400,6 @@ nav.active {
     font-size: 1rem;
 }
 
-.skills__list a {
-    inline-size: 100vw;
-}
-
 .underline {
     position: absolute;
     inset-block-start: 4rem;
