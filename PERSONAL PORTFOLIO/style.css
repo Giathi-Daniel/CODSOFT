@@ -325,10 +325,6 @@ nav.active {
     background: var(--color-primary);
 }
 
-.skill_item a {
-    color: var(--color-black);
-}
-
 .skills__container ul {
     display: flex;
     gap: 3rem;
@@ -386,13 +382,6 @@ nav.active {
     color: var(--color-black);
     inline-size: 85%;
     display: inline-block;
-}
-
-.skill_desc.active {
-    border: 1px solid var(--color-primary);
-    border-radius: .45rem;
-    padding-inline: 1rem;
-    padding-block-end: 4rem;
 }
 
 .skills__desc article h1 {
