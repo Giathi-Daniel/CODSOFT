@@ -389,27 +389,6 @@ nav.active {
     font-size: 1rem;
 }
 
-.underline {
-    position: absolute;
-    inset-block-start: 4rem;
-    background: var(--color-secondary);
-    block-size: .1rem;
-    inline-size: 17%;
-    z-index: -1;
-    inset-inline-start: 26rem;
-}
-
-.underline:nth-child(2) {
-    position: absolute;
-    inset-block-start: 4rem;
-    background: var(--color-secondary) !important;
-    block-size: .1rem;
-    inline-size: 16.5%;
-    color: var(--color-secondary) !important;
-    z-index: -1;
-    inset-inline-start: 73.5rem;
-}
-
 /* ******************************* PROJECTS SECTION ******************************* */
 #projects .heading__container {
     padding: 2rem;
@@ -441,7 +420,6 @@ nav.active {
     text-align: start;
     transition: var(--transition);
     cursor: pointer;
-    inline-size: 98%;
 }
 
 .project__item:hover {
@@ -622,7 +600,7 @@ p>a {
 
 /* ******************************* FOOTER SECTION ******************************* */
 footer {
-    inline-size: 100vw;
+    inline-size: 100%;
     background: var(--color-black);
     padding-block-start: 10rem;
     display: flex;
@@ -909,6 +887,14 @@ footer a {
     /* PROJECTS */
     .project__item a {
         margin-inline-start: -13rem;
+    }
+
+    .game {
+        inline-size: 20rem;
+    }
+
+    .project__item {
+        inline-size: 98%;
     }
 
     .projects__container {
