@@ -25,7 +25,7 @@ menuClose.addEventListener('click', toggleMenu);
 
 // navClose
 const navMenuItems = navItems.querySelectorAll('a');
-if (window.innerHeight > 820) {
+if (window.innerHeight < 820) {
   navMenuItems.forEach(item => {
     item.addEventListener('click', () => {
       toggleMenu();
