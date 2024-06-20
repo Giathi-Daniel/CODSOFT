@@ -49,15 +49,3 @@ document.getElementById('downloadButton').addEventListener('click', function() {
           link.click();
       });
 });
-
-
-// SKILLS SECTION
-// const skillButtons = document.querySelectorAll('.skill_item')
-// const skillItem = document.querySelectorAll('.skill_desc')
-
-// skillButtons.forEach(item => {
-//   item.addEventListener('click', () => {
-//     item.classList.add('active');
-//     skillItem.classList.add
-//   })
-// })
