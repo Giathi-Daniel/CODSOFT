@@ -136,11 +136,16 @@ nav {
     place-items: center;
     inset-block-start: 0;
     inset-inline-start: 0;
-    z-index: 99999999;
+    z-index: 99;
+    position: relative;
+    transition: var(--transition);
 }
 
-nav.active {
+nav.sticky {
+    position: fixed;
+    inset-block-start: 0;
     animation: slide .4s forwards;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, .3);
 }
 
 @keyframes slide {
@@ -150,7 +155,6 @@ nav.active {
 
     to {
         inset-block-start: 0;
-        box-shadow: 0 0 1.2rem rgba(0, 0, 0, .1);
     }
 }
 
@@ -741,13 +745,15 @@ footer a {
     .nav__list.active {
         position: absolute;
         inset-inline-start: 0;
-        inset-block-start: 6rem;
+        inset-block-start: 5.8rem;
         flex-direction: column;
         background-color: var(--color-primary);
         inline-size: 50%;
         block-size: 100vh;
         align-items: self-start;
         padding-inline-start: 1.8rem;
+        transition: var(--transition);
+        box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, .3);
     }
 
     i.navItem {
@@ -791,7 +797,6 @@ footer a {
         inline-size: 10%;
         aspect-ratio: 1/1;
         overflow: hidden;
-        /* text-align: center; */
         padding: 1rem;
         display: flex;
         align-items: center;
@@ -888,15 +893,6 @@ footer a {
     .project__item a {
         margin-inline-start: -13rem;
     }
-
-    .game {
-        inline-size: 20rem;
-    }
-
-    .project__item {
-        inline-size: 98%;
-    }
-
     .projects__container {
         grid-template-columns: 1fr;
     }

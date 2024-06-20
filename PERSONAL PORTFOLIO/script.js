@@ -1,10 +1,10 @@
 // window onscroll
 const navigation = document.querySelector('nav');
 window.addEventListener("scroll", () => {
-  if(this.scrollY > 100) {
-    navigation.classList.add('active');
+  if(window.scrollY > 100) {
+    navigation.classList.add('sticky');
   } else {
-    navigation.classList.remove('active')
+    navigation.classList.remove('sticky')
   }
 })
 
@@ -22,6 +22,16 @@ function toggleMenu() {
 
 menuBtn.addEventListener('click', toggleMenu);
 menuClose.addEventListener('click', toggleMenu);
+
+// navClose
+const navMenuItems = navItems.querySelectorAll('a');
+if (window.innerHeight > 820) {
+  navMenuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      toggleMenu();
+    })
+  })
+}
 
 
 // download button
