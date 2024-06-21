@@ -48,7 +48,7 @@ window.onscroll = () => {
 // SWIPER
 // var swiper = new Swiper('.product-slider', {
 //     loop:true,
-//     spaceBetween: 20,
+//     spaceBetween: 30,
 //     autoplay: {
 //         delay: 7500,
 //         disableOnInteraction: false,
@@ -66,6 +66,7 @@ window.onscroll = () => {
 //       },
 //     },
 // });
+
 
 // var swiper = new Swiper(".review-slider", {
 //     loop:true,
