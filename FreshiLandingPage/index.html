@@ -31,10 +31,10 @@
         </nav>
   
         <div class="icons">
-          <div class="fas fa-bars" id="menu-btn"></div>
           <div class="fas fa-search" id="search-btn"></div>
           <div class="fas fa-shopping-cart" id="cart-btn"></div>
           <div class="fas fa-user" id="login-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
         </div>
   
         <form action="" class="search-form">
@@ -45,7 +45,7 @@
         <div class="shopping-cart">
           <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="" alt="cart1" />
+            <img src="images/cat1.jpg" alt="cart1" />
             <div class="content">
               <h3>watermelon</h3>
               <span class="price">$5.99</span>
@@ -54,7 +54,7 @@
           </div>
           <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="" alt="cart1" />
+            <img src="images/cat2.webp" alt="cart1" style="inline-size: 15rem; object-fit: cover;" />
             <div class="content">
               <h3>apple</h3>
               <span class="price">$3.99</span>
@@ -63,7 +63,7 @@
           </div>
           <div class="box">
             <i class="fas fa-trash"></i>
-            <img src="" alt="cart1" />
+            <img src="images/cat3.jpg" alt="cart1" />
             <div class="content">
               <h3>onion</h3>
               <span class="price">$2.99</span>
@@ -76,11 +76,25 @@
   
         <form action="" class="login-form">
           <h3>Welcome back</h3>
-          <input type="email" class="box" placeholder="your email" />
-          <input type="password" class="box" placeholder="your password" />
+          <input type="email" name="email" class="box" placeholder="Enter email address" />
+          <input type="password" name="password" class="box" placeholder="Enter your password" />
           <p>forget password? <a href="#home">click here</a></p>
-          <p>don't have an account <a href="#home">create now</a></p>
+          <p>don't have an account <a href="#signup" class="toggle-form">create now</a></p>
           <input type="submit" value="login now" class="btn" />
+        </form>
+
+        <form action="" class="signup-form" id="signup">
+          <h3>Create Account</h3>
+          <input type="text" name="name" class="box" placeholder="your username" />
+          <input type="email" name="email" class="box" placeholder="Enter email address" />
+          <input type="password" name="password" class="box" placeholder="Enter your password" />
+          <input type="password" name="password" class="box" placeholder="Confirm your password" />
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox">
+            <p>Remember me</p>
+          </div>
+          <p>Already have an account <a href="#signin">sign Up</a></p>
+          <input type="submit" value="Register" class="btn" />
         </form>
       </header>
       <!--============== HEADER SECTION END================-->

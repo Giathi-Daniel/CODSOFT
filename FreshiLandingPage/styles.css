@@ -109,6 +109,10 @@ section {
     color: var(--orange);
 }
 
+.header .icons {
+    display: flex;
+}
+
 .header .icons div {
     block-size: 4.5rem;
     inline-size: 4.5rem;
@@ -245,7 +249,8 @@ section {
 }
 
 /* User Auth */
-.header .login-form {
+.header .login-form,
+.header .signup-form {
     position: absolute;
     inset-block-start: 110%;
     inset-inline-end: -110%;
@@ -257,12 +262,14 @@ section {
     text-align: center;
 }
 
-.header .login-form.active {
+.header .login-form.active,
+.header .signup-form.active {
     inset-inline-end: 2rem;
     transition: .4s linear;
 }
 
-.header .login-form h3 {
+.header .login-form h3,
+.header .signup-form h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
@@ -280,20 +287,33 @@ section {
     border: none;
 }
 
-.header .login-form p {
+.header .login-form p,
+.header .signup-form p {
     font-size: 1.4rem;
     padding: .5rem 0;
     columns: var(--light-color);
 }
 
-.header .login-form p a {
+.header .login-form p a,
+.header .signup-form p a {
     color: var(--orange);
     text-decoration: none;
 }
 
-.header .login-form p a:hover {
+.header .login-form p a:hover,
+.header .signup-form p a:hover {
     text-decoration: underline;
     transition: .4s linear;
+}
+
+.signup-form {
+    display: none;
+}
+
+.signup-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 
