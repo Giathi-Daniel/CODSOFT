@@ -109,10 +109,6 @@ section {
     color: var(--orange);
 }
 
-.header .icons {
-    display: flex;
-}
-
 .header .icons div {
     block-size: 4.5rem;
     inline-size: 4.5rem;
@@ -374,8 +370,6 @@ section {
 .features .box-container .box img {
     margin: 1rem 0;
     block-size: 15rem;
-    object-fit: cover;
-    inline-size: 100%;
 }
 
 .features .box-container .box h3 {
@@ -395,30 +389,75 @@ section {
 /* ************* PRODUCTS SECTION ******************** */
 .product-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.box {
+.product-container .box {
     background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+    block-size: auto;
+}
+
+.product-container .box:hover {
+    outline-offset: 0rem;
+    outline: var(--outline-color);
+}
+
+.product-container .box img {
+    inline-size: 80%;
+    object-fit: cover;
+}
+
+.product-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.product-container .box .price {
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+
+.product-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+    padding: .5rem 0;
+    margin-block-end: 1.5rem;
+}
+
+.price span {
+    text-decoration: line-through;
+    color: red;
+    font-weight: bold;
+    margin-inline-start: .5rem;
+}
+
+.addCart-btn {
+    background: var(--black);
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    inline-size: 60%;
+    color: #fff;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    block-size: 20rem;
-    border-radius: .5rem;
-    gap: 2rem;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin-inline: auto;
+    gap: .7rem;
 }
 
-.box>.btn {
-    inline-size: 100%;
+.addCart-btn:hover {
+    transform: scale(1.1);
 }
 
-.box img {
-    inline-size: 50%;
-    block-size: auto;
-    object-fit: cover;
-
-}
 
 /* ************* CATEGORIES SECTION ******************** */
 .categories .box-container {
