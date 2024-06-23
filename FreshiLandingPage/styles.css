@@ -379,7 +379,7 @@ input[type="submit"] {
 }
 
 .features .box-container .box img {
-    block-size: 15rem;
+    block-size: 20rem;
     border-start-start-radius: .5rem;
     border-start-end-radius: .5rem;
     object-fit: cover;
@@ -506,6 +506,7 @@ input[type="submit"] {
 .categories .box-container .box img {
     margin: 1rem 0;
     block-size: 15rem;
+    object-fit: cover;
 }
 
 .categories .box-container .box h3 {
@@ -548,10 +549,11 @@ input[type="submit"] {
 
 .swiper-wrapper .box img {
     inline-size: 10rem;
-    block-size: 10rem;
+    aspect-ratio: 1/1;
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
+    align-self: center;
 
 }
 
@@ -784,6 +786,10 @@ input[type="submit"] {
         font-size: 2rem;
         margin: 2rem 2.5rem;
         display: block;
+    }
+
+    .addCart-btn {
+        inline-size: fit-content;
     }
 
 }
