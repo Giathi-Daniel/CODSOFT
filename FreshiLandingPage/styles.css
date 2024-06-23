@@ -9,11 +9,6 @@
     --border: .2rem solid rgba(0, 0, 0, .1);
     --outline: .1rem solid rgba(0, 0, 0, 0.1);
     --outline-color: .2rem solid var(--black);
-
-
-    /* Dark Outline */
-    --color-bg: ;
-    --color-text: ;
 }
 
 * {
@@ -107,11 +102,11 @@ section {
 .header .navbar a {
     font-size: 1.7rem;
     margin: 0 1rem;
-    color: var(--orange);
+    color: #fff;
 }
 
 .header .navbar a:hover {
-    color: #fff;
+    color: var(--orange);
 }
 
 .header .icons div {
@@ -249,6 +244,7 @@ section {
     color: #fff;
     border: 1px solid #fff;
 }
+
 .header .shopping-cart .btn:hover {
     border: none;
 }
@@ -296,10 +292,10 @@ section {
 .header .signup-form p {
     font-size: 1.4rem;
     padding: .5rem 0;
-    color:  #fff;
+    color: #fff;
 }
 
-.header .login-form > p {
+.header .login-form>p {
     text-align: start;
 }
 
@@ -379,7 +375,7 @@ input[type="submit"] {
 }
 
 .features .box-container .box:hover {
-    border:.1rem solid var(--orange);
+    border: .1rem solid var(--orange);
 }
 
 .features .box-container .box img {
@@ -527,11 +523,9 @@ input[type="submit"] {
 
 
 /* ************* REVIEWS SECTION ******************** */
-section#swiper {
-    margin-inline: 3rem;
-}
 .swiper {
     padding: 10rem 1rem;
+    inline-size: 84%;
 }
 
 .swiper-wrapper .box {
@@ -776,8 +770,9 @@ section#swiper {
         inset-block-start: 110%;
         inset-inline-end: -110%;
         inline-size: 30rem;
-        box-shadow: var(--box-shadow);
-        background: #fff;
+        box-shadow: 1rem 0 3rem rgba(0, 0, 0, .1);
+        background: var(--black);
+        color: #fff;
     }
 
     .header .navbar.active {
