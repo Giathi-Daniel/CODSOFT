@@ -299,6 +299,10 @@ section {
     color:  #fff;
 }
 
+.header .login-form > p {
+    text-align: start;
+}
+
 .header .login-form p a,
 .header .signup-form p a {
     color: var(--orange);
