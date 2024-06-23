@@ -382,6 +382,7 @@ input[type="submit"] {
     block-size: 15rem;
     border-start-start-radius: .5rem;
     border-start-end-radius: .5rem;
+    object-fit: cover;
 }
 
 .features .box-container .box h3 {
@@ -522,6 +523,9 @@ input[type="submit"] {
 
 
 /* ************* REVIEWS SECTION ******************** */
+section#swiper {
+    margin-inline: 3rem;
+}
 .swiper {
     padding: 10rem 1rem;
 }
