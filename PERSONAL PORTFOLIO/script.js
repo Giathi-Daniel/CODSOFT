@@ -41,11 +41,23 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   pdfEmbed.style.display = 'block';
 
   fetch('My Resume.pdf')
-      .then(response => response.blob())
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response.blob();
+      })
       .then(blob => {
           let link = document.createElement('a');
           link.href = window.URL.createObjectURL(blob);
           link.download = 'My Resume.pdf';
-          link.click();
+          link.style.display = 'none'; // Hide the link element
+          document.body.appendChild(link); // Append the link to the DOM
+          link.click(); // Programmatically click the link
+          document.body.removeChild(link); // Clean up: remove the link from the DOM
+      })
+      .catch(error => {
+          console.error('Error fetching the PDF file:', error);
       });
 });
+
