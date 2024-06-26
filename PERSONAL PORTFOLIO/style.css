@@ -442,6 +442,7 @@ nav.sticky {
     text-align: start;
     transition: var(--transition);
     cursor: pointer;
+    align-items: start;
 }
 
 .project__item:hover {
@@ -459,7 +460,6 @@ nav.sticky {
     inline-size: fit-content;
     transition: var(--transition);
     border-radius: .6rem;
-    margin-inline-start: -6rem;
 }
 
 .project__item a:hover {
@@ -702,11 +702,6 @@ footer a {
         font-size: 1.3rem;
     }
 
-    /* projects */
-    .project__item a {
-        margin-inline-start: -10rem;
-    }
-
     /* resume */
     .resume__container {
         grid-template-columns: 1fr;
@@ -844,11 +839,6 @@ footer a {
         inset-inline-start: 12rem;
     }
 
-    /* project */
-    .project__item a {
-        margin-inline-start: -19rem;
-    }
-
     /* resume */
     .resume__container {
         place-items: center;
@@ -906,12 +896,6 @@ footer a {
     .underline:nth-child(2) {
         display: none;
     }
-
-    /* PROJECTS */
-    .project__item a {
-        margin-inline-start: -13rem;
-    }
-
     .projects__container {
         grid-template-columns: 1fr;
     }
