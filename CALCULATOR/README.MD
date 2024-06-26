@@ -2,6 +2,6 @@
 
 <p>
   <a href="">
-    <img src="images/portfolio2.png" alt="IMAGE LINK" /> 
+    <img src="images/design.png" alt="IMAGE LINK" /> 
   </a>
 </p>
