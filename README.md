@@ -1,1 +1,1 @@
-# This repo contains projects done during a one month internship at CODSOFT
+# This repo contains projects done during one-month virtual internship at CODSOFT
